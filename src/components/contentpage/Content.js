@@ -5,6 +5,7 @@ import ContactUs from "./ContactUs";
 import Company from "./Company";
 import ECatalog from "./ECatalog";
 import Exports from "./Exports";
+import Product from "./Product";
 import FloorTiles from "./products/FloorTiles";
 import WallTiles from "./products/WallTiles";
 import ParkingTiles from "./products/ParkingTiles";
@@ -20,6 +21,7 @@ export default function Content() {
         <Route path="/exports" component={Exports} />
         <Route path="/company" component={Company} />
         <Route path="/e-catalog" component={ECatalog} />
+        <Route path="/products" component={Product} />
         <Route path="/products/floor-tiles" component={FloorTiles} />
         <Route path="/products/wall-tiles" component={WallTiles} />
         <Route path="/products/sanetery-ware" component={SanateryWare} />

@@ -2,8 +2,10 @@ import React from "react";
 import "./Products.css";
 import ProductSidebar from "./ProductSidebar";
 import { products } from "../../config";
+import myData from '../../data/products.json'
 export default class Product extends React.Component {
   render() {
+    console.log(myData)
     return (
       <section className="products">
         <div className="container">
