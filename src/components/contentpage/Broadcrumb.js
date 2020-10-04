@@ -1,7 +1,9 @@
 import React from "react";
 
-export default function Broadcrumb() {
+export const Broadcrumb = () => {
   let url =  window.location.pathname;
+  // let temp = url.replace('/','')
+  console.log('hii there');
   return (
     <div className="breadcrumb">
       <div className="container">
@@ -10,3 +12,4 @@ export default function Broadcrumb() {
     </div>
   );
 }
+export default Broadcrumb;

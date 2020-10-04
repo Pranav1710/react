@@ -6,8 +6,8 @@ export default function ContactUs() {
     <section className="mb-4">
         <Breadcrumb />
       <div className="container">
-        <h1 className="h1-responsive font-weight-bold text-center my-4">
-          Contact us
+        <h1 className="h1-responsive text-center my-4 mt-5">
+          Get In Touch <span className="emphesis">Now!</span> 
         </h1>
         <p className="text-center w-responsive mx-auto">
           Do you have any questions? Please do not hesitate to contact us
