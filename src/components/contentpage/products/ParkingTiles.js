@@ -7,18 +7,7 @@ export default function ParkingTiles() {
     <>
       <Breadcrumb />
       <Products type="parking" />
-      {/* <section className="parkingsidebar">
-        <div className="container">
-        <div className="row">
-        <div className="col-md-3">
-        <ProductSidebar type='parking'/>
-        </div>
-        <div className="col-md-9">
-        <Products type='parking'/>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
     </>
   );
 }

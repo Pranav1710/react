@@ -1,7 +1,5 @@
 import React from "react";
 import "./Products.css";
-// import { products } from "../../config";
-import BreadCrumb from "./Broadcrumb";
 import ProductSidebar from './ProductSidebar';
 import Data from "../../data/products.json";
 export default class Products extends React.Component {
@@ -16,9 +14,6 @@ export default class Products extends React.Component {
     return pro.type == this.props.type?pro:null; 
   } 
   render() {
-    console.log(this.state.products);
-    console.log(Data);
-    // console.log(this.props);
     const mapProduct = (ele, i) => (
       <div className="col-md-4" key={i}>
         <img src={ele.imgUrl}></img>
@@ -27,7 +22,6 @@ export default class Products extends React.Component {
     );
     return (
       <div className="products">
-        {/* <BreadCrumb /> */}
         <section className="wallTiles">
         <div className="container">
           <div className="row">

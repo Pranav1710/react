@@ -7,18 +7,7 @@ export default function SanateryWare() {
     <>
       <Breadcrumb />
       <Products type="sanetery" />
-      {/* <section className="sanateryware">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3">
-              <ProductSidebar type=''/>
-            </div>
-            <div className="col-md-9">
-              <Products type='sanetery'/>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      
     </>
   );
 }

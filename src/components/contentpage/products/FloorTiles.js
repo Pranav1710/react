@@ -7,18 +7,7 @@ export const FloorTiles = () => {
     <>
       <Breadcrumb />
       <Products type="floor" />
-      {/* <section className="floorTiles">
-        <div className="container">
-        <div className="row">
-        <div className="col-md-3">
-        <ProductSidebar type='floor'/>
-        </div>
-        <div className="col-md-9">
-        <Products type='floor' />
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
     </>
   );
 };
