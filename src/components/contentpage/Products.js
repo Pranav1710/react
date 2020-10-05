@@ -1,44 +1,34 @@
 import React from "react";
 import "./Products.css";
-import ProductSidebar from './ProductSidebar';
+import ProductSidebar from "./ProductSidebar";
+import DisplayProduct from "./DisplayProduct";
 import Data from "../../data/products.json";
+import Breadcrumb from "./Broadcrumb";
 export default class Products extends React.Component {
-  constructor(){
+  constructor() {
     super();
-    this.state ={ products : []};
+    this.state = { products: [] };
   }
-  componentDidMount(){
-    this.setState(this.state.products = Data.filter(this.checkType));
+  componentDidMount() {
+    this.setState((this.state.products = Data.filter(this.checkType)));
   }
-  checkType = (pro)=>{
-    return pro.type == this.props.type?pro:null; 
-  } 
+  checkType = (pro) => {
+    return pro.type == this.props.type ? pro : null;
+  };
   render() {
-    const mapProduct = (ele, i) => (
-      <div className="col-md-4" key={i}>
-        <img src={ele.imgUrl}></img>
-        <h4 className="product-modal">{ele.modal}</h4>
-      </div>
-    );
     return (
       <div className="products">
-        <section className="wallTiles">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3">
-            <ProductSidebar type={this.props.type}/>
-            </div>
-            <div className="col-md-9">
-               {  
-                  <div className="row" style={{marginTop:0}}>
-                    {this.state.products.map(mapProduct)}
-                  </div>
-                }
+        <Breadcrumb />
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3">
+                <ProductSidebar type={this.props.type} />
+              </div>
+              <div className="col-md-9">
+                <DisplayProduct products={this.state.products} />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-               
       </div>
     );
   }

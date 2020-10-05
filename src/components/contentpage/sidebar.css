@@ -86,9 +86,19 @@
     cursor: pointer;
     text-align: center;
     border-bottom: 1px solid rgba(197, 197, 197, 0.384);
-    padding: .2em 0;
     background: #fcfcfc;
     opacity: 0;
+}
+
+.link,
+.link:active,
+.link:focus,
+.link:hover {
+    display: block;
+    text-decoration: none;
+    color: #2e3236;
+    width: 100%;
+    padding: .2em 0;
 }
 
 
@@ -109,6 +119,6 @@
     /* opacity: 0; */
 }
 
-ul>li:last-child {
+ul li:last-child {
     border-bottom: none;
 }
