@@ -26,6 +26,8 @@ export class ProductSidebar extends React.Component {
           ? "floor"
           : type == "parking"
           ? "parking"
+          : type == 'sanetery'
+          ? "sanetery"
           : type == "dc"
           ? "dc"
           : "pg";
@@ -123,7 +125,7 @@ export class ProductSidebar extends React.Component {
             </ul>
           </div>
 
-          <div className="product-type">
+          <div className="product-type" id="sanetery">
             <h5 className="product-title">
               Sanatery ware
               <i
