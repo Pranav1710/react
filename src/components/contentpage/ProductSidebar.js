@@ -53,8 +53,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-              <li className="product-item"> <Link className='link' to="/products/wall-tiles">300 x 450</Link></li>
-              <li className="product-item"> <Link className='link' to="/products/wall-tiles">300 x 600</Link></li>
+              <li className="product-item" onClick={this.props.wall.bind(this,'300x450')}>300 x 450</li>
+              <li className="product-item" onClick={this.props.wall.bind(this,'300x600')}>300 x 600</li>
             </ul>
           </div>
 
@@ -70,8 +70,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-            <li className="product-item"> <Link className='link' to="/products/parking-tiles">300 x 300</Link></li>
-            <li className="product-item"> <Link className='link' to="/products/parking-tiles">400 x 400</Link></li>
+            <li className="product-item" onClick={this.props.parking.bind(this,'300x300')}>300 x 300</li>
+            <li className="product-item" onClick={this.props.parking.bind(this,'400x400')}>400 x 400</li>
             </ul>
           </div>
 
@@ -126,6 +126,7 @@ export class ProductSidebar extends React.Component {
           </div>
 
           <div className="product-type" id="sanetery">
+          <Link className='link' to="/products/sanetery-ware">
             <h5 className="product-title">
               Sanatery ware
               <i
@@ -133,6 +134,7 @@ export class ProductSidebar extends React.Component {
                 aria-hidden="true"
               ></i>
             </h5>
+            </Link>
           </div>
         </aside>
       </div>

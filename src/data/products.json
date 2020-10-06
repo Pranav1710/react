@@ -12,7 +12,7 @@
         "type": "wall",
         "description": "metfinishing wall tiles",
         "modal": "1012",
-        "size": ["200x300", "150x200"]
+        "size": ["300x450", "300x600"]
     },
     {
         "id": "3",
@@ -36,7 +36,7 @@
         "type": "sanetery",
         "description": "very beautiful and attrective",
         "modal": "1015",
-        "size": ["600x600", "800x800"]
+        "size": ["6050x6050", "5800x800"]
     },
     {
         "id": "1",
@@ -60,7 +60,7 @@
         "type": "parking",
         "description": "very beautiful and attrective",
         "modal": "1013",
-        "size": ["600x600", "800x800"]
+        "size": ["300x300", "400x400"]
     },
     {
         "id": "4",
