@@ -53,8 +53,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-              <li className="product-item" onClick={this.props.wall.bind(this,'300x450')}>300 x 450</li>
-              <li className="product-item" onClick={this.props.wall.bind(this,'300x600')}>300 x 600</li>
+              {/* <li className="product-item" onClick={this.props.wall.bind(this,'300x450')}>300 x 450</li>
+              <li className="product-item" onClick={this.props.wall.bind(this,'300x600')}>300 x 600</li> */}
             </ul>
           </div>
 
@@ -70,8 +70,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-            <li className="product-item" onClick={this.props.parking.bind(this,'300x300')}>300 x 300</li>
-            <li className="product-item" onClick={this.props.parking.bind(this,'400x400')}>400 x 400</li>
+            <li className="product-item"><Link to='/products/parking-tiles/300x300' className='link'>300 x 300</Link></li>
+            <li className="product-item"><Link to='/products/parking-tiles/400x400' className='link'>400 x 400</Link></li>
             </ul>
           </div>
 

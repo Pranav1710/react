@@ -15,15 +15,16 @@ export default function Content() {
   return (
     <div id="content">
       <Switch>
-        <Route exact path="/" component={home} />
-        <Route exact path="/contact-us" component={ContactUs} />
-        <Route exact path="/exports" component={Exports} />
-        <Route exact path="/company" component={Company} />
-        <Route exact path="/e-catalog" component={ECatalog} />
-        <Route exact path="/products/floor-tiles" component={FloorTiles} />
-        <Route exact path="/products/wall-tiles" component={WallTiles} />
-        <Route exact path="/products/sanetery-ware" component={SanateryWare} />
-        <Route exact path="/products/parking-tiles" component={ParkingTiles} />
+        <Route exact={true} path="/" component={home} />
+        <Route path="/contact-us" component={ContactUs} />
+        <Route path="/exports" component={Exports} />
+        <Route path="/company" component={Company} />
+        <Route path="/e-catalog" component={ECatalog} />
+        <Route path="/products/floor-tiles" component={FloorTiles} />
+        <Route path="/products/wall-tiles" component={WallTiles} />
+        <Route path="/products/sanetery-ware" component={SanateryWare} />
+        <Route exact={true} path="/products/parking-tiles" component={ParkingTiles} />
+        <Route path="/products/parking-tiles/:size" render={(match)=>( <ParkingTiles size={match}/>)} />
       </Switch>
     </div>
   );

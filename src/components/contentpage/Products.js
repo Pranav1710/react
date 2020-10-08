@@ -1,9 +1,9 @@
 import React from "react";
 import "./Products.css";
-import ProductSidebar from "./ProductSidebar";
-import DisplayProduct from "./DisplayProduct";
+
+
 import Data from "../../data/products.json";
-import Breadcrumb from "./Broadcrumb";
+
 export default class Products extends React.Component {
   constructor() {
     super();
@@ -78,22 +78,8 @@ export default class Products extends React.Component {
   };
   render() {
     return (
-      <div className="products">
-        <Breadcrumb/>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3">
-              <ProductSidebar
-                type={this.props.type}
-                wall={this.setProductsWall}
-                parking={this.setProductsParking}
-              />
-            </div>
-            <div className="col-md-9">
-              <DisplayProduct products={this.state.products} />
-            </div>
-          </div>
-        </div>
+      <div>
+        HelloWorld
       </div>
     );
   }
