@@ -64,6 +64,7 @@
 
 .activeItem .product-item {
     opacity: 1;
+    pointer-events: all;
 }
 
 .activeItem>.product-sub-items {
@@ -72,10 +73,12 @@
 
 .activeItem>.product-sub-items>.product-sub-item {
     opacity: 1;
+    pointer-events: all;
 }
 
 .activeItem .product-items .product-sub-type {
     opacity: 1;
+    pointer-events: all;
 }
 
 .product-item,
@@ -88,6 +91,7 @@
     border-bottom: 1px solid rgba(197, 197, 197, 0.384);
     background: #fcfcfc;
     opacity: 0;
+    pointer-events: none;
 }
 
 .link,

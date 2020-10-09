@@ -7,7 +7,7 @@ export default class ParkingTiles extends React.Component {
   constructor({ size }) {
     super();
     this.state = { parking: [] };
-    if (size) this.size = size.match.params.size;
+    if (size)this.size = size.match.params.size;
     else this.size = null;
     console.log(this.size);
   }
@@ -17,8 +17,16 @@ export default class ParkingTiles extends React.Component {
     );
     this.setProductsParking(this.size);
   }
-  componentWillUpdate(){
-    console.log('dvmdfokmwekkersdopkdsx');
+  componentWillReceiveProps({size}){
+    if (size)this.size = size.match.params.size;
+    else this.size = null;
+    console.log(this.size);
+    this.setState(
+      (this.state.parking = Data.filter(this.checkType.bind(this, "parking")))
+    );
+    if(this.size!==null)
+      this.setProductsParking(this.size);
+    
   }
   checkType = (type, pro) => {
     return pro.type == type ? pro : null;

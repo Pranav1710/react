@@ -53,8 +53,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-              {/* <li className="product-item" onClick={this.props.wall.bind(this,'300x450')}>300 x 450</li>
-              <li className="product-item" onClick={this.props.wall.bind(this,'300x600')}>300 x 600</li> */}
+              <li className="product-item"><Link to='/products/wall-tiles/300x450' className='link'>300 x 450</Link></li>
+              <li className="product-item"><Link to='/products/wall-tiles/300x600' className='link'>300 x 600</Link></li>
             </ul>
           </div>
 

@@ -21,9 +21,10 @@ export default function Content() {
         <Route path="/company" component={Company} />
         <Route path="/e-catalog" component={ECatalog} />
         <Route path="/products/floor-tiles" component={FloorTiles} />
-        <Route path="/products/wall-tiles" component={WallTiles} />
+        <Route exact={true} path="/products/wall-tiles" render={(match)=>( <WallTiles size={match}/>)} />
+        <Route path="/products/wall-tiles/:size" render={(match)=>( <WallTiles size={match}/>)} />
         <Route path="/products/sanetery-ware" component={SanateryWare} />
-        <Route exact={true} path="/products/parking-tiles" component={ParkingTiles} />
+        <Route exact={true} path="/products/parking-tiles" render={()=>( <ParkingTiles size={null}/>)} />
         <Route path="/products/parking-tiles/:size" render={(match)=>( <ParkingTiles size={match}/>)} />
       </Switch>
     </div>

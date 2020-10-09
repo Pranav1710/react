@@ -12,10 +12,34 @@
         "type": "wall",
         "description": "metfinishing wall tiles",
         "modal": "1012",
-        "size": ["300x450", "300x600"]
+        "size": ["300x450"]
     },
     {
         "id": "3",
+        "imgUrl": "/assets/imgs/products/3.jpg",
+        "type": "wall",
+        "description": "metfinishing wall tiles",
+        "modal": "1012",
+        "size": ["300x450"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/4.jpg",
+        "type": "wall",
+        "description": "metfinishing wall tiles",
+        "modal": "1012",
+        "size": ["300x600"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/5.jpg",
+        "type": "wall",
+        "description": "metfinishing wall tiles",
+        "modal": "1012",
+        "size": ["300x600"]
+    },
+    {
+        "id": "4",
         "imgUrl": "/assets/imgs/products/3.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
@@ -23,7 +47,7 @@
         "size": ["600x600", "800x800"]
     },
     {
-        "id": "4",
+        "id": "5",
         "imgUrl": "/assets/imgs/products/4.jpg",
         "type": "sanetery",
         "description": "very beautiful and attrective",
@@ -31,7 +55,7 @@
         "size": ["600x600", "800x800"]
     },
     {
-        "id": "5",
+        "id": "6",
         "imgUrl": "/assets/imgs/products/5.jpg",
         "type": "sanetery",
         "description": "very beautiful and attrective",
@@ -39,7 +63,7 @@
         "size": ["6050x6050", "5800x800"]
     },
     {
-        "id": "1",
+        "id": "7",
         "imgUrl": "/assets/imgs/products/1.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -47,7 +71,7 @@
         "size": ["600x600", "800x800"]
     },
     {
-        "id": "2",
+        "id": "8",
         "imgUrl": "/assets/imgs/products/2.jpg",
         "type": "wall",
         "description": "metfinishing wall tiles",
@@ -55,7 +79,7 @@
         "size": ["200x300", "150x200"]
     },
     {
-        "id": "3",
+        "id": "9",
         "imgUrl": "/assets/imgs/products/3.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
@@ -63,7 +87,7 @@
         "size": ["300x300", "400x400"]
     },
     {
-        "id": "4",
+        "id": "10",
         "imgUrl": "/assets/imgs/products/4.jpg",
         "type": "sanetery",
         "description": "very beautiful and attrective",
@@ -77,5 +101,21 @@
         "description": "very beautiful and attrective",
         "modal": "1015",
         "size": ["600x600", "800x800"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/5.jpg",
+        "type": "parking",
+        "description": "very beautiful and attrective",
+        "modal": "1013",
+        "size": ["300x300"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/6.jpg",
+        "type": "parking",
+        "description": "very beautiful and attrective",
+        "modal": "1013",
+        "size": ["400x400"]
     }
 ]

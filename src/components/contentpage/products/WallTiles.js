@@ -4,14 +4,28 @@ import DisplayProduct from "../DisplayProduct";
 import ProductSidebar from "../ProductSidebar";
 import Data from "../../../data/products.json";
 export default class WallTiles extends React.Component {
-  constructor() {
+  constructor({size}) {
     super();
     this.state = { wall: [] };
+    if (size)this.size = size.match.params.size;
+    else this.size = null;
   }
   componentDidMount() {
     this.setState(
       (this.state.wall = Data.filter(this.checkType.bind(this, "wall")))
     );
+    this.setProductsWall(this.size);
+  }
+  componentWillReceiveProps({size}){
+    if (size)this.size = size.match.params.size;
+    else this.size = null;
+    console.log(this.size);
+    this.setState(
+      (this.state.wall = Data.filter(this.checkType.bind(this, "wall")))
+    );
+    if(this.size!==null)
+      this.setProductsWall(this.size);
+    
   }
   checkType = (type, pro) => {
     return pro.type == type ? pro : null;
@@ -46,7 +60,7 @@ export default class WallTiles extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-3">
-                <ProductSidebar type="wall" wall={this.setProductsWall} />
+                <ProductSidebar type="wall" />
               </div>
               <div className="col-md-9">
                 <DisplayProduct products={this.state.wall} />
