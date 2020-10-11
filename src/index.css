@@ -32,8 +32,9 @@ body {
     left: 0;
 }
 
-.slide img {
+.slide>img {
     height: inherit;
+    width: inherit;
     object-fit: cover;
     object-position: center;
     filter: brightness(70%);
@@ -83,6 +84,7 @@ body {
 
 .slide-container:hover .arrow {
     opacity: 1;
+    pointer-events: all;
 }
 
 .arrow {
@@ -96,6 +98,7 @@ body {
     cursor: pointer;
     transition: all 250ms ease;
     opacity: 0;
+    pointer-events: none;
 }
 
 .arrow:hover {
@@ -148,6 +151,19 @@ body {
     padding: .2rem 0;
 }
 
+.breadcrumb h6 {
+    padding-top: 10px;
+    font-size: .9rem;
+    float: right;
+}
+
 .breadcrumb h4 {
-    padding-top: 2px;
+    padding-top: 4px;
+    text-transform: capitalize;
+    float: left;
+}
+
+.breadcrumb .blink {
+    text-decoration: none;
+    color: white;
 }

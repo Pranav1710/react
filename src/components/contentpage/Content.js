@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import home from "./Home";
 import ContactUs from "./ContactUs";
 import Company from "./Company";
-import ECatalog from "./ECatalog";
 import Exports from "./Exports";
 import FloorTiles from "./products/FloorTiles";
 import WallTiles from "./products/WallTiles";
@@ -19,8 +18,9 @@ export default function Content() {
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/exports" component={Exports} />
         <Route path="/company" component={Company} />
-        <Route path="/e-catalog" component={ECatalog} />
-        <Route path="/products/floor-tiles" component={FloorTiles} />
+        <Route exact={true} path="/products/floor-tiles" render={(match)=>( <FloorTiles size={match}/>)} />
+        <Route exact={true} path="/products/floor-tiles/:type" render={(match)=>( <FloorTiles size={match}/>)} />
+        <Route path="/products/floor-tiles/:type/:size" render={(match)=>( <FloorTiles size={match}/>)} />
         <Route exact={true} path="/products/wall-tiles" render={(match)=>( <WallTiles size={match}/>)} />
         <Route path="/products/wall-tiles/:size" render={(match)=>( <WallTiles size={match}/>)} />
         <Route path="/products/sanetery-ware" component={SanateryWare} />

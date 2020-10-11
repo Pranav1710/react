@@ -29,8 +29,13 @@ h1::after {
     margin-top: 30px;
 }
 
+.product-disc {
+    text-align: justify;
+}
+
 .anime-img {
     overflow: hidden;
+    height: inherit;
 }
 
 .anime-img img:hover {
@@ -44,4 +49,5 @@ h1::after {
     object-position: center;
     transform: scale(1.15);
     transition: all 250ms ease;
+    filter: brightness(90%);
 }

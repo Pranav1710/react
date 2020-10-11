@@ -1,0 +1,17 @@
+[{
+        "id": "1",
+        "imgUrl": "/assets/imgs/products/wall-tiles/2.jpg",
+        "type": "wall",
+        "description": "metfinishing wall tiles",
+        "modal": "1012",
+        "size": ["300x450"]
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/wall-tiles/4.jpg",
+        "type": "wall",
+        "description": "metfinishing wall tiles",
+        "modal": "1012",
+        "size": ["300x600"]
+    }
+]

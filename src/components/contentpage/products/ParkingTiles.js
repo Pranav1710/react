@@ -2,7 +2,7 @@ import React from "react";
 import Breadcrumb from "../Broadcrumb";
 import DisplayProduct from "../DisplayProduct";
 import ProductSidebar from "../ProductSidebar";
-import Data from "../../../data/products.json";
+import Data from "../../../data/parkingTiles.json";
 export default class ParkingTiles extends React.Component {
   constructor({ size }) {
     super();
@@ -13,7 +13,7 @@ export default class ParkingTiles extends React.Component {
   }
   componentDidMount() {
     this.setState(
-      (this.state.parking = Data.filter(this.checkType.bind(this, "parking")))
+      (this.state.parking = Data)
     );
     this.setProductsParking(this.size);
   }
@@ -22,15 +22,15 @@ export default class ParkingTiles extends React.Component {
     else this.size = null;
     console.log(this.size);
     this.setState(
-      (this.state.parking = Data.filter(this.checkType.bind(this, "parking")))
+      (this.state.parking = Data)
     );
     if(this.size!==null)
       this.setProductsParking(this.size);
     
   }
-  checkType = (type, pro) => {
-    return pro.type == type ? pro : null;
-  };
+  // checkType = (type, pro) => {
+  //   return pro.type == type ? pro : null;
+  // };
   setProductsParking = (size) => {
     if (size === "300x300") {
       this.setState(
@@ -47,7 +47,7 @@ export default class ParkingTiles extends React.Component {
     }
   };
   checkSize = (ele, pro) => {
-    console.log(pro.size.includes(ele));
+    // console.log(pro.size.includes(ele));
     return pro.size.includes(ele);
     // return pro.size[0] === ele;
     // return pro.size[0] === ele ? pro:null;
@@ -69,7 +69,6 @@ export default class ParkingTiles extends React.Component {
             </div>
           </div>
         </div>
-        {/* <Products type="wall" /> */}
       </>
     );
   }

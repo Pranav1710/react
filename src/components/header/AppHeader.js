@@ -3,6 +3,14 @@ import { NavLink } from "react-router-dom";
 import { Logo } from "../../config";
 import "./AppHeader.css";
 export default class AppHeader extends Component {
+  toggleSitenav(){
+    document.querySelector('.site-nav').classList.toggle('site-nav--open');
+    document.querySelector('.menu-toggle').classList.toggle('open');
+  }
+  closeMenu(){
+    document.querySelector('.site-nav').classList.remove('site-nav--open');
+    document.querySelector('.menu-toggle').classList.remove('open');
+  }
   render() {
     return (
       <header>
@@ -14,56 +22,56 @@ export default class AppHeader extends Component {
           <nav className="site-nav">
             <ul>
               <li>
-                <NavLink className="link-nav" to="/">
+                <NavLink className="link-nav" to="/" onClick={this.closeMenu}>
                   Home
                 </NavLink>
               </li>
               <li className="dropdown">
-                <NavLink className="link-nav" to="/products">
+                <NavLink className="link-nav" to="/products" onClick={this.closeMenu}>
                   Products
                 </NavLink>
                 <ul className="dropdown-content">
                   <li>
-                    <NavLink className="dd-item" to="/products/floor-tiles">
+                    <NavLink className="dd-item" to="/products/floor-tiles" onClick={this.closeMenu}>
                       Floor Tiles
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dd-item" to="/products/wall-tiles">
+                    <NavLink className="dd-item" to="/products/wall-tiles" onClick={this.closeMenu}>
                       Wall Tiles
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dd-item" to="/products/sanetery-ware">
+                    <NavLink className="dd-item" to="/products/sanetery-ware" onClick={this.closeMenu}>
                       Sanetery ware
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dd-item" to="/products/parking-tiles">
+                    <NavLink className="dd-item" to="/products/parking-tiles" onClick={this.closeMenu}>
                       Parking Tiles
                     </NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <NavLink className="link-nav" to="/Company">
+                <NavLink className="link-nav" to="/Company" onClick={this.closeMenu}>
                   Company
                 </NavLink>
               </li>
               <li>
-                <NavLink className="link-nav" to="/Exports">
+                <NavLink className="link-nav" to="/Exports" onClick={this.closeMenu}>
                   Exports
                 </NavLink>
               </li>
               <li>
-                <NavLink className="link-nav" to="/Contact-Us">
+                <NavLink className="link-nav" to="/Contact-Us" onClick={this.closeMenu}>
                   Contact Us
                 </NavLink>
               </li>
             </ul>
           </nav>
 
-          <div className="menu-toggle">
+          <div className="menu-toggle" onClick={this.toggleSitenav}>
             <div className="hamburger"></div>
           </div>
         </div>

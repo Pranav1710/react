@@ -26,8 +26,6 @@ export class ProductSidebar extends React.Component {
           ? "floor"
           : type == "parking"
           ? "parking"
-          : type == 'sanetery'
-          ? "sanetery"
           : type == "dc"
           ? "dc"
           : "pg";
@@ -87,8 +85,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-            <li className="product-item"> <Link className='link' to="/products/floor-tiles">Nano(Soluble Salt)</Link></li>
-            <li className="product-item"> <Link className='link' to="/products/floor-tiles">Porceline: 600 x 600</Link></li>
+            <li className="product-item"> <Link className='link' to="/products/floor-tiles/nano">Nano(Soluble Salt)</Link></li>
+            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline">Porceline: 600 x 600</Link></li>
               <li className="product-sub-type" id="dc">
                 <h6
                   className="product-sub-title"
@@ -101,9 +99,9 @@ export class ProductSidebar extends React.Component {
                   ></i>
                 </h6>
                 <ul className="product-sub-items">
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles">600 x 600</Link></li>
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles">800 x 800</Link></li>
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles">600 x 1200</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/600x600">600 x 600</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/800x800">800 x 800</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/600x1200">600 x 1200</Link></li>
                 </ul>
               </li>
               <li className="product-sub-type" id="pg">
@@ -118,8 +116,8 @@ export class ProductSidebar extends React.Component {
                   ></i>
                 </h6>
                 <ul className="product-sub-items">
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles">600 x 600</Link></li>
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles">600 x 1200</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/gvt&pgvt/600x600">600 x 600</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/gvt&pgvt/600x1200">600 x 1200</Link></li>
                 </ul>
               </li>
             </ul>
@@ -129,10 +127,6 @@ export class ProductSidebar extends React.Component {
           <Link className='link' to="/products/sanetery-ware">
             <h5 className="product-title">
               Sanatery ware
-              <i
-                className="fa fa-angle-right angle-right"
-                aria-hidden="true"
-              ></i>
             </h5>
             </Link>
           </div>

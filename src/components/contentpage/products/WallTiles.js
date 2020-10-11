@@ -2,34 +2,32 @@ import React from "react";
 import Breadcrumb from "../Broadcrumb";
 import DisplayProduct from "../DisplayProduct";
 import ProductSidebar from "../ProductSidebar";
-import Data from "../../../data/products.json";
+import Data from "../../../data/wallTiles.json";
 export default class WallTiles extends React.Component {
   constructor({size}) {
     super();
-    this.state = { wall: [] };
+    this.state = { wall: [...Data] };
     if (size)this.size = size.match.params.size;
     else this.size = null;
   }
   componentDidMount() {
-    this.setState(
-      (this.state.wall = Data.filter(this.checkType.bind(this, "wall")))
-    );
-    this.setProductsWall(this.size);
+    if(this.size!==null)
+      this.setProductsWall(this.size);
   }
   componentWillReceiveProps({size}){
     if (size)this.size = size.match.params.size;
     else this.size = null;
     console.log(this.size);
     this.setState(
-      (this.state.wall = Data.filter(this.checkType.bind(this, "wall")))
+      (this.state.wall = Data)
     );
     if(this.size!==null)
       this.setProductsWall(this.size);
     
   }
-  checkType = (type, pro) => {
-    return pro.type == type ? pro : null;
-  };
+  // checkType = (type, pro) => {
+  //   return pro.type == type ? pro : null;
+  // };
   setProductsWall = (size) => {
     if (size === "300x450") {
       this.setState(

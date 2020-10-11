@@ -1,0 +1,64 @@
+[{
+        "id": "1",
+        "imgUrl": "/assets/imgs/products/floor-tiles/5.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "nano",
+        "size": ["600x600"]
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/floor-tiles/2.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "porceline",
+        "size": ["600x600"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/floor-tiles/3.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "doubleCharge",
+        "size": ["600x600"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/floor-tiles/2.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "doubleCharge",
+        "size": ["800x800"]
+    },
+    {
+        "id": "4",
+        "imgUrl": "/assets/imgs/products/floor-tiles/4.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "doubleCharge",
+        "size": ["600x1200"]
+    },
+    {
+        "id": "5",
+        "imgUrl": "/assets/imgs/products/floor-tiles/5.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "gvt&pgvt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "6",
+        "imgUrl": "/assets/imgs/products/floor-tiles/1.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1011",
+        "catagory": "gvt&pgvt",
+        "size": ["600x1200"]
+    }
+]

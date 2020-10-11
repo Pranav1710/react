@@ -1,0 +1,17 @@
+[{
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/parking-tiles/1.jpg",
+        "type": "parking",
+        "description": "very beautiful and attrective",
+        "modal": "1013",
+        "size": ["300x300"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/parking-tiles/2.jpg",
+        "type": "parking",
+        "description": "very beautiful and attrective",
+        "modal": "1013",
+        "size": ["400x400"]
+    }
+]

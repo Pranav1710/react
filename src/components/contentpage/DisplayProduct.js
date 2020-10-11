@@ -1,5 +1,5 @@
 import React from "react";
-
+import './DisplayProducts.css';
 export const DisplayProduct = props => {
   const mapProduct = (ele, i) => (
     <div className="col-md-4" key={i}>
