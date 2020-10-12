@@ -34,7 +34,6 @@ export class ProductSidebar extends React.Component {
     };
 
     return (
-      <div className="productSide">
         <aside className="sidebar">
           <Link to="/Contact-Us">
             <button className="btn-inq">
@@ -131,7 +130,6 @@ export class ProductSidebar extends React.Component {
             </Link>
           </div>
         </aside>
-      </div>
     );
   }
 }

@@ -12,29 +12,30 @@ export default class AppHeader extends Component {
     document.querySelector(".menu-toggle").classList.remove("open");
     // document.querySelector(".menu-toggle").classList.add()
   };
-  activeProd = () =>{
+  activeProd = () => {
     document.querySelector(".prod").classList.add("active");
+  };
+  twoInOne = () => {
+    document.querySelector(".prod").classList.remove("active");
+    this.closeMenu();
   };
   render() {
     return (
       <header>
         <div className="container clearfix">
-          <NavLink className="link-logo" to="/" exact activeClassName="no-active">
+          <NavLink
+            className="link-logo"
+            to="/"
+            exact
+            activeClassName="no-active"
+          >
             <img className="logo" src={Logo} alt="Blue International" />
           </NavLink>
 
           <nav className="site-nav">
             <ul>
               <li>
-                <NavLink
-                  className="link-nav"
-                  to="/"
-                  exact
-                  onClick={()=>{
-                     document.querySelector(".prod").classList.remove("active");
-                    this.closeMenu.bind(this)
-                  }}
-                >
+                <NavLink className="link-nav" to="/" exact onClick={this.twoInOne.bind(this)}>
                   Home
                 </NavLink>
               </li>
@@ -45,7 +46,6 @@ export default class AppHeader extends Component {
                 <span
                   className="link-nav prod"
                   style={{ cursor: "pointer" }}
-                  onClick={this.closeMenu.bind(this)}
                 >
                   Products
                 </span>
@@ -80,7 +80,7 @@ export default class AppHeader extends Component {
                       Sanetery ware
                     </NavLink>
                   </li>
-                  <li onClick={this.activeProd}> 
+                  <li onClick={this.activeProd}>
                     <NavLink
                       className="dd-item"
                       to="/products/parking-tiles"
@@ -96,10 +96,7 @@ export default class AppHeader extends Component {
                 <NavLink
                   className="link-nav"
                   to="/Company"
-                  onClick={()=>{
-                    document.querySelector(".prod").classList.remove("active");
-                   this.closeMenu.bind(this)
-                 }}
+                  onClick={this.twoInOne.bind(this)}
                 >
                   Company
                 </NavLink>
@@ -108,10 +105,7 @@ export default class AppHeader extends Component {
                 <NavLink
                   className="link-nav"
                   to="/Exports"
-                  onClick={()=>{
-                    document.querySelector(".prod").classList.remove("active");
-                   this.closeMenu.bind(this)
-                 }}
+                  onClick={this.twoInOne.bind(this)}
                 >
                   Exports
                 </NavLink>
@@ -120,10 +114,7 @@ export default class AppHeader extends Component {
                 <NavLink
                   className="link-nav"
                   to="/Contact-Us"
-                  onClick={()=>{
-                    document.querySelector(".prod").classList.remove("active");
-                   this.closeMenu.bind(this)
-                 }}
+                  onClick={this.twoInOne.bind(this)}
                 >
                   Contact Us
                 </NavLink>
@@ -139,4 +130,3 @@ export default class AppHeader extends Component {
     );
   }
 }
-

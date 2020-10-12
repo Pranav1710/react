@@ -1,8 +1,12 @@
+footer {
+    margin-top: 2.2rem;
+}
+
 .text-muted {
     width: 100%;
-    height: 2.5rem;
+    /* height: 2.5rem; */
     /* Set the fixed height of the footer here */
-    padding: 0.4rem 0 0 0;
+    padding: 0.4rem 0;
     /* Vertically center the text there */
     background-color: rgb(2, 29, 44);
     font-size: 0.9rem;
@@ -78,4 +82,10 @@ hr {
 
 .gDot.widget {
     background: none repeat scroll 0 0 #ffffff;
+}
+
+@media (max-width: 576px) {
+    .main-foot .container {
+        padding-left: 2rem;
+    }
 }

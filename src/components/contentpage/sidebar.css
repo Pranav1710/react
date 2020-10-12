@@ -126,3 +126,9 @@
 ul li:last-child {
     border-bottom: none;
 }
+
+@media (max-width: 771px) {
+    aside {
+        margin-bottom: 3em;
+    }
+}
