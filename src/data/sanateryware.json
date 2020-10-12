@@ -11,5 +11,31 @@
         "type": "sanatery",
         "description": "metfinishing wall tiles",
         "modal": "1012"
+    }, {
+        "id": "1",
+        "imgUrl": "/assets/imgs/products/sanateryware/1.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "1012"
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/sanateryware/2.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "1012"
+    }, {
+        "id": "1",
+        "imgUrl": "/assets/imgs/products/sanateryware/1.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "1012"
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/sanateryware/2.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "1012"
     }
 ]

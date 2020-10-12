@@ -8,8 +8,12 @@ export default function AppFooter() {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <h6>Blue International</h6>
-              <hr />
+              <div className="divider">
+                <h6>Blue International</h6>
+                <div class="gDot widget"></div>
+                <hr />
+              </div>
+
               <ul className="company-info">
                 <li style={{ display: "flex" }}>
                   <i
@@ -34,8 +38,11 @@ export default function AppFooter() {
               </ul>
             </div>
             <div className="col-md-4">
-              <h6>Quick Links</h6>
-              <hr />
+              <div className="divider">
+                <h6>Quick Links</h6>
+                <hr />
+                <div class="gDot widget"></div>
+              </div>
               <ul className="quick-links">
                 <li>
                   <i className="fa fa-caret-right" aria-hidden="true"></i>
@@ -64,8 +71,12 @@ export default function AppFooter() {
               </ul>
             </div>
             <div className="col-md-4">
-              <h6>Our Products</h6>
-              <hr />
+              <div className="divider">
+                <h6>Our Products</h6>
+                <hr />
+                <div class="gDot widget"></div>
+              </div>
+
               <ul className="products">
                 <li>
                   <i className="fa fa-caret-right" aria-hidden="true"></i>
@@ -97,7 +108,10 @@ export default function AppFooter() {
         </div>
       </div>
       <div className="text-muted">
-        <p className="container">© Copyright 2020 Blue International | Developed by <span>Pranav Chanpara</span></p>
+        <p className="container">
+          © Copyright 2020 Blue International | Developed by{" "}
+          <span>Pranav Chanpara</span>
+        </p>
       </div>
     </footer>
   );
