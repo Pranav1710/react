@@ -50,8 +50,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-              <li className="product-item"><Link to='/products/wall-tiles/300x450' className='link'>300 x 450</Link></li>
-              <li className="product-item"><Link to='/products/wall-tiles/300x600' className='link'>300 x 600</Link></li>
+              <li className="product-item"><Link to='/products/wall-tiles/300x450' className='link'>300 x 450 mm</Link></li>
+              <li className="product-item"><Link to='/products/wall-tiles/300x600' className='link'>300 x 600 mm</Link></li>
             </ul>
           </div>
 
@@ -67,8 +67,8 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-            <li className="product-item"><Link to='/products/parking-tiles/300x300' className='link'>300 x 300</Link></li>
-            <li className="product-item"><Link to='/products/parking-tiles/400x400' className='link'>400 x 400</Link></li>
+            <li className="product-item"><Link to='/products/parking-tiles/300x300' className='link'>300 x 300 mm</Link></li>
+            <li className="product-item"><Link to='/products/parking-tiles/400x400' className='link'>400 x 400 mm</Link></li>
             </ul>
           </div>
 
@@ -85,7 +85,7 @@ export class ProductSidebar extends React.Component {
             </h5>
             <ul className="product-items">
             <li className="product-item"> <Link className='link' to="/products/floor-tiles/nano">Nano(Soluble Salt)</Link></li>
-            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline">Porceline: 600 x 600</Link></li>
+            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline">Porceline: 600 x 600 mm</Link></li>
               <li className="product-sub-type" id="dc">
                 <h6
                   className="product-sub-title"
@@ -98,9 +98,9 @@ export class ProductSidebar extends React.Component {
                   ></i>
                 </h6>
                 <ul className="product-sub-items">
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/600x600">600 x 600</Link></li>
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/800x800">800 x 800</Link></li>
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/600x1200">600 x 1200</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/600x600">600 x 600 mm</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/800x800">800 x 800 mm</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/doubleCharge/600x1200">600 x 1200 mm</Link></li>
                 </ul>
               </li>
               <li className="product-sub-type" id="pg">
@@ -115,8 +115,8 @@ export class ProductSidebar extends React.Component {
                   ></i>
                 </h6>
                 <ul className="product-sub-items">
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/gvt&pgvt/600x600">600 x 600</Link></li>
-                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/gvt&pgvt/600x1200">600 x 1200</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/gvt&pgvt/600x600">600 x 600 mm</Link></li>
+                  <li className="product-sub-item"><Link className='link' to="/products/floor-tiles/gvt&pgvt/600x1200">600 x 1200 mm</Link></li>
                 </ul>
               </li>
             </ul>

@@ -1,12 +1,114 @@
-.row {
-    margin-top: 2rem;
-}
-
-.sendBtn {
-    color: white !important;
-    font-size: 1.2rem;
+.contact>.extra-padding {
+    padding: 0 15%;
 }
 
 .emphesis {
     color: #4b7bec;
+}
+
+.input-data {
+    width: 100%;
+    position: relative;
+}
+
+.input-data input,
+.input-data textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+}
+
+.input-data textarea~.underline {
+    height: 2px;
+    bottom: 1px;
+}
+
+.input-data textarea {
+    border-bottom: none;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label,
+.input-data textarea:focus~label,
+.input-data textarea:valid~label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: silver;
+}
+
+.input-data input:required {
+    box-shadow: none;
+}
+
+.input-data .underline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #4158d0;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-data input:focus~.underline::before,
+.input-data input:valid~.underline::before,
+.input-data textarea:focus~.underline::before,
+.input-data textarea:valid~.underline::before {
+    transform: scaleX(1);
+}
+
+.input-data label {
+    position: absolute;
+    /* bottom: 5px; */
+    color: grey;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.btn-send {
+    position: relative;
+    padding: 0.5em 2em;
+    background-color: #135175;
+    color: white;
+    font-size: 1.1em;
+    overflow: hidden;
+    transition: all 1s ease;
+    font-weight: 600;
+}
+
+.btn-send::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgb(252, 251, 251);
+    box-shadow: inset 5px 5px 5px whitesmoke;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 1s ease;
+}
+
+.btn-send:hover:after,
+.btn-send:focus::after {
+    transform: translateX(100%) rotate(45deg);
+    /* background-color: white; */
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: rgb(19, 92, 141);
+    /* background-color: rgb(24, 132, 151); */
 }
