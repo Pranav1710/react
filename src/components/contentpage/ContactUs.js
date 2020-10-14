@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Breadcrumb from "./Broadcrumb";
 import "./ContactUs.css";
 // import "https://www.google.com/recaptcha/api.js";
 import Map from "./Map";
+
 export default function ContactUs() {
-  function onChange(value) {
-    console.log("Captcha value:", value);
+
+  const [catpchaSolved, setCaptchaSolved] = useState(false)
+  const captchaSuccess = () => setCaptchaSolved(true)
+  const captchaExpired = () => setCaptchaSolved(false)
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    if(catpchaSolved) {
+      console.log(catpchaSolved)
+      // Make POST request from here using AJAX
+    } else {
+      console.log("Captcha Not Solved")
+      // Show Message asking to solve captcha
+    }
   }
+
+
   return (
     <section className="mb-4 contact-section">
       <Breadcrumb />
@@ -20,7 +35,7 @@ export default function ContactUs() {
             >
               Get In Touch <span className="emphesis">Now!</span>
             </h1>
-            <form action="localhost/blueInternational/contactUs.php" method="post">
+            <form onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-6" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
@@ -61,16 +76,17 @@ export default function ContactUs() {
                 <div className="col-md-12" style={{ marginTop: "2.5rem" }}>
                   <ReCAPTCHA
                     sitekey="6LdK19YZAAAAAIgO-fQS2GjP2Eklr63aajQjrjaJ"
-                    onChange={onChange}
+                    onChange={captchaSuccess}
+                    onExpired={captchaExpired}
                   />
-              
+
                 </div>
                 <div className="col-md-12" style={{ marginTop: "2.5rem" }}>
                   <button type="submit" className="btn-send">
                     Send Message
                   </button>
                 </div>
-                
+
               </div>
             </form>
           </div>
