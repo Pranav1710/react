@@ -19,9 +19,26 @@ export default class AppHeader extends Component {
     document.querySelector(".prod").classList.remove("active");
     this.closeMenu();
   };
+  stickyNav = (sticky) => {
+    if (window.pageYOffset > sticky) {
+      this.navbar.classList.add("sticky");
+    } else {
+      this.navbar.classList.remove("sticky");
+    }
+  };
+  componentDidMount() {
+    // Get the navbar
+    this.navbar = document.getElementById("header");
+    if (this.navbar) {
+      let sticky = this.navbar.offsetTop;
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = this.stickyNav.bind(this,sticky);
+      
+    }
+  }
   render() {
     return (
-      <header>
+      <header id="header">
         <div className="container clearfix">
           <NavLink
             className="link-logo"
@@ -35,7 +52,12 @@ export default class AppHeader extends Component {
           <nav className="site-nav">
             <ul>
               <li>
-                <NavLink className="link-nav" to="/" exact onClick={this.twoInOne.bind(this)}>
+                <NavLink
+                  className="link-nav"
+                  to="/"
+                  exact
+                  onClick={this.twoInOne.bind(this)}
+                >
                   Home
                 </NavLink>
               </li>
@@ -43,10 +65,7 @@ export default class AppHeader extends Component {
                 {/* <NavLink className="link-nav" to="/products" onClick={this.closeMenu}>
                   Products
                 </NavLink> */}
-                <span
-                  className="link-nav prod"
-                  style={{ cursor: "pointer" }}
-                >
+                <span className="link-nav prod" style={{ cursor: "pointer" }}>
                   Products
                 </span>
                 <ul className="dropdown-content">
@@ -66,6 +85,7 @@ export default class AppHeader extends Component {
                       to="/products/wall-tiles"
                       onClick={this.closeMenu.bind(this)}
                       activeClassName="no-active dd-active"
+                      style={{ pointerEvents: "none" }}
                     >
                       Wall Tiles
                     </NavLink>
@@ -101,15 +121,7 @@ export default class AppHeader extends Component {
                   Company
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  className="link-nav"
-                  to="/Exports"
-                  onClick={this.twoInOne.bind(this)}
-                >
-                  Exports
-                </NavLink>
-              </li>
+
               <li>
                 <NavLink
                   className="link-nav"

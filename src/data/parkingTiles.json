@@ -1,47 +1,63 @@
 [{
         "id": "3",
-        "imgUrl": "/assets/imgs/products/parking-tiles/1.jpg",
+        "imgUrl": "/assets/imgs/products/parking-tiles/501.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
-        "modal": "1013",
+        "modal": "501",
         "size": ["300x300"]
     },
     {
         "id": "3",
-        "imgUrl": "/assets/imgs/products/parking-tiles/2.jpg",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-607.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
-        "modal": "1013",
-        "size": ["400x400"]
+        "modal": "J-607",
+        "size": ["300x300"]
     }, {
         "id": "3",
-        "imgUrl": "/assets/imgs/products/parking-tiles/1.jpg",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-608.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
-        "modal": "1013",
+        "modal": "J-608",
         "size": ["300x300"]
     },
     {
         "id": "3",
-        "imgUrl": "/assets/imgs/products/parking-tiles/2.jpg",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-619.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
-        "modal": "1013",
-        "size": ["400x400"]
+        "modal": "J-619",
+        "size": ["300x300"]
     }, {
         "id": "3",
-        "imgUrl": "/assets/imgs/products/parking-tiles/1.jpg",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-620.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
-        "modal": "1013",
+        "modal": "J-620",
         "size": ["300x300"]
     },
     {
         "id": "3",
-        "imgUrl": "/assets/imgs/products/parking-tiles/2.jpg",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-707.jpg",
         "type": "parking",
         "description": "very beautiful and attrective",
-        "modal": "1013",
-        "size": ["400x400"]
+        "modal": "J-707",
+        "size": ["300x300"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-1005.jpg",
+        "type": "parking",
+        "description": "very beautiful and attrective",
+        "modal": "J-1005",
+        "size": ["300x300"]
+    },
+    {
+        "id": "3",
+        "imgUrl": "/assets/imgs/products/parking-tiles/J-1112.jpg",
+        "type": "parking",
+        "description": "very beautiful and attrective",
+        "modal": "J-1112",
+        "size": ["300x300"]
     }
 ]

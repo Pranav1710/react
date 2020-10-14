@@ -1,6 +1,12 @@
-.contact>.extra-padding {
+.contact-section>.extra-padding {
     padding: 0 15%;
 }
+
+
+/* .bg {
+    background-image: url(/assets/imgs/bg.jpg);
+    background-attachment: fixed;
+} */
 
 .emphesis {
     color: #4b7bec;
@@ -46,7 +52,8 @@
     background-color: silver;
 }
 
-.input-data input:required {
+.input-data input:required,
+.input-data textarea:required {
     box-shadow: none;
 }
 
@@ -80,7 +87,7 @@
     position: relative;
     padding: 0.5em 2em;
     background-color: #135175;
-    color: white;
+    color: whitesmoke;
     font-size: 1.1em;
     overflow: hidden;
     transition: all 1s ease;
@@ -95,7 +102,7 @@
     top: 0;
     left: 0;
     display: block;
-    background-color: rgb(252, 251, 251);
+    background-color: rgb(250, 249, 249);
     box-shadow: inset 5px 5px 5px whitesmoke;
     transform: translateX(-100%) rotate(45deg);
     transition: all 1s ease;
@@ -110,5 +117,56 @@
 .btn-send:hover,
 .btn-send:focus {
     background-color: rgb(19, 92, 141);
-    /* background-color: rgb(24, 132, 151); */
+    color: white;
+    /* background-color: rgb(48, 226, 122); */
+}
+
+
+/* sdmcxjiwoefd */
+
+.contact-item {
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    /* -webkit-box-shadow: 0 0 8px 0 rgba(240, 240, 240, 1);
+    -moz-box-shadow: 0 0 8px 0 rgba(240, 240, 240, 1);
+    box-shadow: 0 0 8px 0 rgba(240, 240, 240, 1); */
+    position: relative;
+}
+
+.contact-item .content {
+    float: left;
+}
+
+.contact-section .fa,
+{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.contact-item>span {
+    font-size: 5rem !important;
+    color: #f0f0f0;
+    margin-top: 25px;
+    position: absolute;
+    right: 19px;
+    bottom: 13px;
+}
+
+@media (max-width: 768px) {
+    .contact-section h1 {
+        font-size: 1.8em !important;
+    }
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1204px) {
+    .contact-item>span {
+        display: none;
+    }
 }

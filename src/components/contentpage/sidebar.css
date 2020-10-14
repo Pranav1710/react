@@ -5,10 +5,18 @@
     background: rgb(4, 60, 92);
     color: white;
     font-weight: 600;
-    padding: .6em;
+    padding: 0.6em;
     text-transform: uppercase;
     margin: 0;
     cursor: pointer;
+}
+
+.sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 7.5%;
+    /* required */
+    align-items: flex-start;
 }
 
 .productSide {
@@ -16,7 +24,7 @@
 }
 
 .env-btn {
-    padding-right: .4em;
+    padding-right: 0.4em;
 }
 
 .product-type,
@@ -26,7 +34,7 @@
 
 .product-title {
     text-align: center;
-    padding: .4em 0;
+    padding: 0.4em 0;
     border-bottom: 1px solid rgba(204, 204, 204, 0.623);
     background: #f3f3f3;
     position: relative;
@@ -92,6 +100,7 @@
     background: #fcfcfc;
     opacity: 0;
     pointer-events: none;
+    /* font-weight: 500; */
 }
 
 .link,
@@ -118,7 +127,7 @@
     position: relative;
     font-weight: 500;
     background: #f9f9f9;
-    padding: .3em 0;
+    padding: 0.3em 0;
     margin: 0;
     /* opacity: 0; */
 }
@@ -130,5 +139,6 @@ ul li:last-child {
 @media (max-width: 771px) {
     aside {
         margin-bottom: 3em;
+        position: relative;
     }
 }

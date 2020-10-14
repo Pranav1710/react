@@ -20,9 +20,9 @@ export class ProductSidebar extends React.Component {
   render() {
     const dropdown = (type) => {
       let t =
-        type == "wall"
-          ? "wall"
-          : type == "floor"
+        // type == "wall"
+        //   ? "wall":
+          type == "floor"
           ? "floor"
           : type == "parking"
           ? "parking"
@@ -42,7 +42,7 @@ export class ProductSidebar extends React.Component {
             </button>
           </Link>
           <div className="product-type" id="wall">
-            <h5 className="product-title" onClick={dropdown.bind(this, "wall")}>
+            <h5 className="product-title" onClick={dropdown.bind(this, "wall")} style={{pointerEvents:"none"}}>
               Wall Tiles
               <i
                 className="fa fa-angle-right angle-right"
@@ -68,7 +68,7 @@ export class ProductSidebar extends React.Component {
             </h5>
             <ul className="product-items">
             <li className="product-item"><Link to='/products/parking-tiles/300x300' className='link'>300 x 300 mm</Link></li>
-            <li className="product-item"><Link to='/products/parking-tiles/400x400' className='link'>400 x 400 mm</Link></li>
+            <li className="product-item"><Link to='/products/parking-tiles/400x400' className='link' style={{pointerEvents:"none"}}>400 x 400 mm</Link></li>
             </ul>
           </div>
 
@@ -84,12 +84,13 @@ export class ProductSidebar extends React.Component {
               ></i>
             </h5>
             <ul className="product-items">
-            <li className="product-item"> <Link className='link' to="/products/floor-tiles/nano">Nano(Soluble Salt)</Link></li>
-            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline">Porceline: 600 x 600 mm</Link></li>
+            <li className="product-item"> <Link className='link' to="/products/floor-tiles/nano">Nano</Link></li>
+            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline" style={{pointerEvents:"none"}}>Porceline</Link></li>
               <li className="product-sub-type" id="dc">
                 <h6
                   className="product-sub-title"
                   onClick={dropdown.bind(this, "dc")}
+                  style={{pointerEvents:"none"}}
                 >
                   Double Charge
                   <i
@@ -107,6 +108,7 @@ export class ProductSidebar extends React.Component {
                 <h6
                   className="product-sub-title"
                   onClick={dropdown.bind(this, "pg")}
+                  style={{pointerEvents:"none"}}
                 >
                   Gvt/Pgvt
                   <i

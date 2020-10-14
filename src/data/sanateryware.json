@@ -1,41 +1,64 @@
 [{
         "id": "1",
-        "imgUrl": "/assets/imgs/products/sanateryware/1.jpg",
+        "imgUrl": "/assets/imgs/products/sanateryware/Angila Half Set - 6001.jpg",
         "type": "sanatery",
         "description": "metfinishing wall tiles",
-        "modal": "1012"
+        "modal": "Angila Half Set - 6001"
     },
     {
         "id": "2",
-        "imgUrl": "/assets/imgs/products/sanateryware/2.jpg",
+        "imgUrl": "/assets/imgs/products/sanateryware/Divine-3001.jpg",
         "type": "sanatery",
         "description": "metfinishing wall tiles",
-        "modal": "1012"
-    }, {
+        "modal": "Divine-3001"
+    },
+    {
         "id": "1",
-        "imgUrl": "/assets/imgs/products/sanateryware/1.jpg",
+        "imgUrl": "/assets/imgs/products/sanateryware/Ellips-1009.jpg",
         "type": "sanatery",
         "description": "metfinishing wall tiles",
-        "modal": "1012"
+        "modal": "Ellips-1009"
     },
     {
         "id": "2",
-        "imgUrl": "/assets/imgs/products/sanateryware/2.jpg",
+        "imgUrl": "/assets/imgs/products/sanateryware/Endeka - 1001.jpg",
         "type": "sanatery",
         "description": "metfinishing wall tiles",
-        "modal": "1012"
-    }, {
+        "modal": "Endeka - 1001"
+    },
+    {
         "id": "1",
-        "imgUrl": "/assets/imgs/products/sanateryware/1.jpg",
+        "imgUrl": "/assets/imgs/products/sanateryware/Era-1006.jpg",
         "type": "sanatery",
         "description": "metfinishing wall tiles",
-        "modal": "1012"
+        "modal": "Era-1006"
     },
     {
         "id": "2",
-        "imgUrl": "/assets/imgs/products/sanateryware/2.jpg",
+        "imgUrl": "/assets/imgs/products/sanateryware/Evita-4001.jpg",
         "type": "sanatery",
         "description": "metfinishing wall tiles",
-        "modal": "1012"
+        "modal": "Evita-4001"
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/sanateryware/Inox P & S.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "Inox P & S"
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/sanateryware/Nexon-2002.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "Inox P & S"
+    },
+    {
+        "id": "2",
+        "imgUrl": "/assets/imgs/products/sanateryware/Nova-2001.jpg",
+        "type": "sanatery",
+        "description": "metfinishing wall tiles",
+        "modal": "Nova-2001"
     }
 ]

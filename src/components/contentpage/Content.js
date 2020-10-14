@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import home from "./Home";
 import ContactUs from "./ContactUs";
 import Company from "./Company";
-import Exports from "./Exports";
 import FloorTiles from "./products/FloorTiles";
 import WallTiles from "./products/WallTiles";
 import ParkingTiles from "./products/ParkingTiles";
@@ -12,11 +11,10 @@ import SanateryWare from "./products/SanateryWare";
 
 export default function Content() {
   return (
-    <div id="content">
+    <div className="content">
       <Switch>
         <Route exact={true} path="/" component={home} />
         <Route path="/contact-us" component={ContactUs} />
-        <Route path="/exports" component={Exports} />
         <Route path="/company" component={Company} />
         <Route exact={true} path="/products/floor-tiles" render={(match)=>( <FloorTiles size={match}/>)} />
         <Route exact={true} path="/products/floor-tiles/:type" render={(match)=>( <FloorTiles size={match}/>)} />

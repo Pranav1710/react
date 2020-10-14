@@ -10,7 +10,7 @@ export default function AppFooter() {
             <div className="col-md-4">
               <div className="divider">
                 <h6>Blue International</h6>
-                <div class="gDot widget"></div>
+                <div className="gDot widget"></div>
                 <hr />
               </div>
 
@@ -41,7 +41,7 @@ export default function AppFooter() {
               <div className="divider">
                 <h6>Quick Links</h6>
                 <hr />
-                <div class="gDot widget"></div>
+                <div className="gDot widget"></div>
               </div>
               <ul className="quick-links">
                 <li>
@@ -50,12 +50,7 @@ export default function AppFooter() {
                     Home
                   </Link>
                 </li>
-                <li>
-                  <i className="fa fa-caret-right" aria-hidden="true"></i>
-                  <Link className="footer-link" to="/exports">
-                    Exports
-                  </Link>
-                </li>
+               
                 <li>
                   <i className="fa fa-caret-right" aria-hidden="true"></i>
                   <Link className="footer-link" to="/company">
@@ -74,7 +69,7 @@ export default function AppFooter() {
               <div className="divider">
                 <h6>Our Products</h6>
                 <hr />
-                <div class="gDot widget"></div>
+                <div className="gDot widget"></div>
               </div>
 
               <ul className="products">

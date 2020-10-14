@@ -1,6 +1,7 @@
 import React from "react";
 import './DisplayProducts.css';
 export const DisplayProduct = props => {
+  // const prod = props.products.length===0?"No Product Available": null ;
   const mapProduct = (ele, i) => (
     <div className="col-md-4" key={i}>
       <img src={ele.imgUrl}></img>

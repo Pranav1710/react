@@ -81,7 +81,7 @@ export default class FloorTiles extends React.Component {
           <Breadcrumb />
           <div className="container">
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-3" >
                 <ProductSidebar type="floor" />
               </div>
               <div className="col-md-9">
