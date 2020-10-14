@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+
 export class ProductSidebar extends React.Component {
-  constructor() {
-    super();
-    // this.state({type: this.props.type});
-  }
+  
+  // constructor() {
+  //   super();
+  //   // this.state({type: this.props.type});
+  // }
+
   componentDidMount() {
     if (this.props.type !== "") this.dropdownOpen(this.props.type);
   }
+
   dropdownOpen = (type) => {
     let element = document.getElementById(type);
     if (element.classList.contains("activeItem")) {
@@ -17,16 +21,17 @@ export class ProductSidebar extends React.Component {
       element.classList.add("activeItem");
     }
   };
+
   render() {
     const dropdown = (type) => {
       let t =
         // type == "wall"
         //   ? "wall":
-          type == "floor"
+          type === "floor"
           ? "floor"
-          : type == "parking"
+          : type === "parking"
           ? "parking"
-          : type == "dc"
+          : type === "dc"
           ? "dc"
           : "pg";
       console.log(t);

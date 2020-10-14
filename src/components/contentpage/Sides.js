@@ -53,7 +53,7 @@ export default class Slides extends Component {
         console.log(this.state.index);
         console.log(this);
         for (let i = 0; i < this.state.images.length; i++) {
-          if (i != this.state.index) {
+          if (i !== this.state.index) {
             this.state.images[i].active = false;
           }
           this.state.images[this.state.index].active = true;
@@ -84,21 +84,21 @@ export default class Slides extends Component {
               this.state.images[0].active ? this.state.activeImg : "deactiveImg"
             } slide slide-one`}
           >
-            <img src={this.state.images[0].img} alt="Image 1" />
+            <img src={this.state.images[0].img} alt="" />
           </div>
           <div
             className={`${
               this.state.images[1].active ? this.state.activeImg : "deactiveImg"
             } slide slide-two`}
           >
-            <img src={this.state.images[1].img} alt="Image 2" />
+            <img src={this.state.images[1].img} alt="" />
           </div>
           <div
             className={`${
               this.state.images[2].active ? this.state.activeImg : "deactiveImg"
             } slide slide-three`}
           >
-            <img src={this.state.images[2].img} alt="Image 3" />
+            <img src={this.state.images[2].img} alt="" />
           </div>
         </div>
       </section>

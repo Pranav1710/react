@@ -1,11 +1,13 @@
 import React from "react";
 import "./map.css";
+
 export default function Map() {
   return (
-    <div style={{overflow:"hidden"}}>
+    <div style={{ overflow: "hidden" }}>
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe
+            title="Map"
             width="100%"
             height="475px"
             id="gmap_canvas"
@@ -15,7 +17,7 @@ export default function Map() {
             marginheight="0"
             marginwidth="0"
           ></iframe>
-          <a href="https://www.whatismyip-address.com"></a>
+          {/* <a href="https://www.whatismyip-address.com"></a> */}
         </div>
       </div>
     </div>

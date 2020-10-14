@@ -13,7 +13,7 @@ export default class Home extends Component {
             <div className="row pt-5">
               <div className="col-md-4">
                 <div className="anime-img">
-                  <img src={imgs.img3} alt="First Image" />
+                  <img src={imgs.img3} alt="" />
                 </div>
                 <h3 className="text-heading mt-3">FLOOR TILES</h3>
                 <p className="mt-3 product-disc">
@@ -22,7 +22,7 @@ export default class Home extends Component {
               </div>  
               <div className="col-md-4">
                 <div className="anime-img">
-                  <img src={imgs.img2} alt="First Image" />
+                  <img src={imgs.img2} alt="" />
                 </div>
                 <h3 className="text-heading mt-3">WALL TILES</h3>
                 <p className="mt-3 product-disc">
@@ -31,7 +31,7 @@ export default class Home extends Component {
               </div>
               <div className="col-md-4">
                 <div className="anime-img">
-                  <img src={imgs.img1} alt="First Image" />
+                  <img src={imgs.img1} alt="" />
                 </div>
                 <h3 className="text-heading mt-3">SANITARY WARES</h3>
                 <p className="mt-3 product-disc">
