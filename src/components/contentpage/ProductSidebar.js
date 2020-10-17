@@ -41,7 +41,7 @@ export class ProductSidebar extends React.Component {
     return (
         <aside className="sidebar">
           <Link to="/Contact-Us">
-            <button className="btn-inq">
+            <button className="btn-send" style={{width:"100%"}}>
               <i className="fa fa-envelope env-btn" aria-hidden="true"></i>
               Inquiry
             </button>
@@ -90,7 +90,7 @@ export class ProductSidebar extends React.Component {
             </h5>
             <ul className="product-items">
             <li className="product-item"> <Link className='link' to="/products/floor-tiles/nano">Nano</Link></li>
-            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline" style={{pointerEvents:"none"}}>Porceline</Link></li>
+            <li className="product-item"> <Link className='link' to="/products/floor-tiles/porceline">Porceline</Link></li>
               <li className="product-sub-type" id="dc">
                 <h6
                   className="product-sub-title"

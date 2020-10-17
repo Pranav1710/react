@@ -20,6 +20,7 @@ export default class AppHeader extends Component {
     this.closeMenu();
   };
   stickyNav = (sticky) => {
+    console.log(window.pageYOffset, "stick" + sticky);
     if (window.pageYOffset > sticky) {
       this.navbar.classList.add("sticky");
     } else {
@@ -32,13 +33,12 @@ export default class AppHeader extends Component {
     if (this.navbar) {
       let sticky = this.navbar.offsetTop;
       // When the user scrolls the page, execute myFunction
-      window.onscroll = this.stickyNav.bind(this,sticky);
-      
+      window.onscroll = this.stickyNav.bind(this, sticky);
     }
   }
   render() {
     return (
-      <header id="header">
+      <header id="header" className="">
         <div className="container clearfix">
           <NavLink
             className="link-logo"
@@ -67,6 +67,11 @@ export default class AppHeader extends Component {
                 </NavLink> */}
                 <span className="link-nav prod" style={{ cursor: "pointer" }}>
                   Products
+                  <i
+                    className="fa fa-angle-down"
+                    aria-hidden="true"
+                    style={{paddingLeft:".2em", opacity:".5"}}
+                  ></i>
                 </span>
                 <ul className="dropdown-content">
                   <li onClick={this.activeProd}>

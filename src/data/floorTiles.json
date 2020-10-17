@@ -26,7 +26,7 @@
         "size": ["600x600"]
     },
     {
-        "id": "3",
+        "id": "4",
         "imgUrl": "/assets/imgs/products/floor-tiles/8004.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -35,7 +35,7 @@
         "size": ["800x800"]
     },
     {
-        "id": "4",
+        "id": "5",
         "imgUrl": "/assets/imgs/products/floor-tiles/8005.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -44,7 +44,7 @@
         "size": ["600x1200"]
     },
     {
-        "id": "5",
+        "id": "6",
         "imgUrl": "/assets/imgs/products/floor-tiles/8006.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -53,15 +53,16 @@
         "size": ["600x600"]
     },
     {
-        "id": "6",
+        "id": "7",
         "imgUrl": "/assets/imgs/products/floor-tiles/8007.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
         "modal": "8007",
         "catagory": "nano",
         "size": ["600x1200"]
-    }, {
-        "id": "1",
+    },
+    {
+        "id": "8",
         "imgUrl": "/assets/imgs/products/floor-tiles/8008.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -70,7 +71,7 @@
         "size": ["600x600"]
     },
     {
-        "id": "2",
+        "id": "9",
         "imgUrl": "/assets/imgs/products/floor-tiles/8009.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -79,7 +80,7 @@
         "size": ["600x600"]
     },
     {
-        "id": "3",
+        "id": "10",
         "imgUrl": "/assets/imgs/products/floor-tiles/8010.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -88,7 +89,7 @@
         "size": ["600x600"]
     },
     {
-        "id": "3",
+        "id": "11",
         "imgUrl": "/assets/imgs/products/floor-tiles/8011.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -97,7 +98,7 @@
         "size": ["800x800"]
     },
     {
-        "id": "4",
+        "id": "12",
         "imgUrl": "/assets/imgs/products/floor-tiles/8012.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
@@ -106,12 +107,252 @@
         "size": ["600x1200"]
     },
     {
-        "id": "5",
+        "id": "13",
         "imgUrl": "/assets/imgs/products/floor-tiles/ivory.jpg",
         "type": "floor",
         "description": "very beautiful and attrective",
         "modal": "ivory",
         "catagory": "nano",
+        "size": ["600x600"]
+    },
+    {
+        "id": "14",
+        "imgUrl": "/assets/imgs/products/floor-tiles/p 8008.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8008",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "15",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8016.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8016",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "16",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8028.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8028",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "17",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8029.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8029",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "18",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8047.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8047",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "19",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8057.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8057",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "20",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8064.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8064",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "21",
+        "imgUrl": "/assets/imgs/products/floor-tiles/8068.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "8068",
+        "catagory": "porceline",
+        "subCatagory": "glossy",
+        "size": ["600x600"]
+    },
+    {
+        "id": "22",
+        "imgUrl": "/assets/imgs/products/floor-tiles/1121 FRD.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "1121FRD",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "23",
+        "imgUrl": "/assets/imgs/products/floor-tiles/3005 FRD P.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "3005FRDP",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "24",
+        "imgUrl": "/assets/imgs/products/floor-tiles/3013 FRD P.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "3013FRDP",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "25",
+        "imgUrl": "/assets/imgs/products/floor-tiles/3016 FRD P.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "3016FRDP",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "26",
+        "imgUrl": "/assets/imgs/products/floor-tiles/4001 FRD.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "4001FRD",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "27",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6002.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6002",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "28",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6048.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6048",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "29",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6070.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6070",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "30",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6088.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6088",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "31",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6098.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6098",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "32",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6101.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6101",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "33",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6149.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6149",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "34",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6180.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6180",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "35",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6191.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6191",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "36",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6198.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6198",
+        "catagory": "porceline",
+        "subCatagory": "matt",
+        "size": ["600x600"]
+    },
+    {
+        "id": "37",
+        "imgUrl": "/assets/imgs/products/floor-tiles/6200.jpg",
+        "type": "floor",
+        "description": "very beautiful and attrective",
+        "modal": "6200",
+        "catagory": "porceline",
+        "subCatagory": "matt",
         "size": ["600x600"]
     }
 ]

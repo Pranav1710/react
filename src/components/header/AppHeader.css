@@ -7,14 +7,11 @@ header {
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-size: 15px;
+    position: initial;
 }
 
 .sticky+.content {
-    margin-top: 3.2em;
+    margin-top: initial;
 }
 
 header>.container {
@@ -140,6 +137,15 @@ header>.container {
 @media (min-width: 991px) {
     .menu-toggle {
         display: none;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+    .sticky+.content {
+        margin-top: 3.2em;
     }
     .site-nav {
         height: auto;

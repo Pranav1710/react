@@ -21,10 +21,10 @@ export default function AppFooter() {
                     aria-hidden="true"
                   ></i>
                   <p>
-                    Chitrakut-5, <br />
-                    b/h g.i.d.c, <br />
-                    sanala road, <br />
-                    morbi,gujarat,india-363641 <br />
+                    Blue International,
+                    <br /> Opp. Gujarat Guest Office,
+                    <br /> 8-A National Highway,
+                    <br /> Morbi-2, Gujarat 363642, India
                   </p>
                 </li>
                 <li>
@@ -50,7 +50,7 @@ export default function AppFooter() {
                     Home
                   </Link>
                 </li>
-               
+
                 <li>
                   <i className="fa fa-caret-right" aria-hidden="true"></i>
                   <Link className="footer-link" to="/company">

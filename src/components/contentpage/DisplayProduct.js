@@ -1,11 +1,13 @@
 import React from "react";
-import './DisplayProducts.css';
-export const DisplayProduct = props => {
+import "./DisplayProducts.css";
+export const DisplayProduct = (props) => {
   // const prod = props.products.length===0?"No Product Available": null ;
   const mapProduct = (ele, i) => (
-    <div className="col-md-4" key={i}>
+    <div className="col-md-4 product-container" key={i}>
       <img src={ele.imgUrl} alt=""></img>
-      <h4 className="product-modal">{ele.modal}</h4>
+      <p className="product-modal">
+        {ele.modal}
+      </p>
     </div>
   );
   return (

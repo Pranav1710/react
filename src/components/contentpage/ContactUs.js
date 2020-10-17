@@ -1,27 +1,51 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import axios from 'axios';
 import Breadcrumb from "./Broadcrumb";
 import "./ContactUs.css";
+import {clientKey} from '../../config';
 // import "https://www.google.com/recaptcha/api.js";
 import Map from "./Map";
 
 export default function ContactUs() {
+  const [catpchaSolved, setCaptchaSolved] = useState(false);
+  const captchaSuccess = () => setCaptchaSolved(true);
+  const captchaExpired = () => setCaptchaSolved(false);
 
-  const [catpchaSolved, setCaptchaSolved] = useState(false)
-  const captchaSuccess = () => setCaptchaSolved(true)
-  const captchaExpired = () => setCaptchaSolved(false)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (catpchaSolved) {
+      console.log(catpchaSolved);
+      let form = document.forms.form1;
+      let d = new FormData(form);
+      let data = {
+        name: d.get("name"),
+        phoneNo: d.get("phoneNo"),
+        email: d.get("email"),
+        subject: d.get("subject"),
+        message: d.get("message"),
+      };
+      console.log(data);
+      // let urlPost = 'http://api.theblueinternational.com/enquiry';
+      let urlPost = 'http://localhost:5000/enquiry';
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    if(catpchaSolved) {
-      console.log(catpchaSolved)
+      axios.post(urlPost, data)
+        .then(response => {
+          console.log('posted');
+          document.querySelector(".msg").innerHTML = `<div class="alert alert-success" role="alert">
+          Your Message has been sent 
+        </div>`;
+        })
+        .catch(error => {
+          document.querySelector(".msg").innerHTML = `<div class="alert alert-danger" role="alert">
+          Some Server Error Occured, Please try again
+        </div>`
+        })
       // Make POST request from here using AJAX
     } else {
-      console.log("Captcha Not Solved")
-      // Show Message asking to solve captcha
+      alert('Please Solve Captcha first');
     }
-  }
-
+  };
 
   return (
     <section className="mb-4 contact-section">
@@ -35,39 +59,39 @@ export default function ContactUs() {
             >
               Get In Touch <span className="emphesis">Now!</span>
             </h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="form1">
               <div className="row">
                 <div className="col-md-6" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
-                    <input type="text" required />
+                    <input name="name" type="text" required />
                     <div className="underline"></div>
                     <label>Name</label>
                   </div>
                 </div>
                 <div className="col-md-6" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
-                    <input type="tel" required />
+                    <input name="phoneNo" type="tel" required />
                     <div className="underline"></div>
                     <label>Phone No.</label>
                   </div>
                 </div>
                 <div className="col-md-12" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
-                    <input type="text" required />
+                    <input type="text" name="email" required />
                     <div className="underline"></div>
                     <label>Email</label>
                   </div>
                 </div>
                 <div className="col-md-12" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
-                    <input type="text" required />
+                    <input type="text" name="subject" required />
                     <div className="underline"></div>
                     <label>Subject</label>
                   </div>
                 </div>
                 <div className="col-md-12" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
-                    <textarea rows="2" required></textarea>
+                    <textarea rows="2" name="message" required></textarea>
                     <div className="underline"></div>
                     <label>Message</label>
                   </div>
@@ -75,18 +99,19 @@ export default function ContactUs() {
 
                 <div className="col-md-12" style={{ marginTop: "2.5rem" }}>
                   <ReCAPTCHA
-                    sitekey="6LdK19YZAAAAAIgO-fQS2GjP2Eklr63aajQjrjaJ"
+                    sitekey={clientKey}
                     onChange={captchaSuccess}
                     onExpired={captchaExpired}
                   />
-
                 </div>
                 <div className="col-md-12" style={{ marginTop: "2.5rem" }}>
                   <button type="submit" className="btn-send">
                     Send Message
                   </button>
                 </div>
+                <div className="col-md-12 msg" style={{ marginTop: "2rem" }}>
 
+                </div>
               </div>
             </form>
           </div>
@@ -98,24 +123,22 @@ export default function ContactUs() {
             <Map />
           </div>
           <div className="col-md-4">
-            <div class="contact-item">
-              <div class="content">
+            <div className="contact-item">
+              <div className="content">
                 <h4>Blue International</h4>
                 <p>
                   <span>
-                    Chitrakut 5
-                    <br /> sanala road,
-                    <br />
-                    B/h g.i.d.c,
-                    <br />
-                    Morbi, Gujarat 363641, India
+                    Blue International,
+                    <br /> Opp. Gujarat Guest Office,
+                    <br /> 8-A National Highway,
+                    <br /> Morbi-2, Gujarat 363642, India
                   </span>
                 </p>
               </div>
               <span className="fa fa-map-marker" aria-hidden="true"></span>
             </div>
-            <div class="contact-item">
-              <div class="content">
+            <div className="contact-item">
+              <div className="content">
                 <h5>call us :</h5>
                 <p>
                   <span>+91- 9824665321</span>
@@ -123,14 +146,14 @@ export default function ContactUs() {
               </div>
               <span className="fa fa-phone"></span>
             </div>
-            <div class="contact-item">
-              <div class="content">
+            <div className="contact-item">
+              <div className="content">
                 <h5>Write us :</h5>
                 <p>
                   <span>Blue@blueinternational.com</span>
                 </p>
               </div>
-              <span class="fa  fa-envelope"></span>
+              <span className="fa  fa-envelope"></span>
             </div>
           </div>
         </div>
