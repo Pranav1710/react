@@ -150,7 +150,7 @@ export default function ContactUs() {
               <div className="content">
                 <h5>Write us :</h5>
                 <p>
-                  <span>Blue@blueinternational.com</span>
+                  <span>Blue@theblueinternational.com</span>
                 </p>
               </div>
               <span className="fa  fa-envelope"></span>
