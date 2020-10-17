@@ -1,5 +1,5 @@
-img {
-    object-fit: cover;
+.product-container img {
+    object-fit: contain;
     object-position: center;
     width: inherit;
     height: 12rem;
@@ -9,5 +9,11 @@ img {
 .product-modal {
     text-align: center;
     letter-spacing: 1px;
-    font-size: 1.3em;
+    font-size: 1em;
+}
+
+.product-container {
+    /* border: 1px solid #3333; */
+    margin-top: .5rem;
+    /* box-shadow: 2px 2px 10px black; */
 }
