@@ -29,11 +29,11 @@ export default function AppFooter() {
                 </li>
                 <li>
                   <i className="fa fa-phone" aria-hidden="true"></i>
-                  <span>+91 9824665321</span>
+                  <span>+91 9157975559</span>
                 </li>
                 <li>
                   <i className="fa fa-envelope" aria-hidden="true"></i>
-                  <span>Blue@blueinternationl.com</span>
+                  <span>Blue@theblueinternationl.com</span>
                 </li>
               </ul>
             </div>

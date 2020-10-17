@@ -141,7 +141,7 @@ export default function ContactUs() {
               <div className="content">
                 <h5>call us :</h5>
                 <p>
-                  <span>+91- 9824665321</span>
+                  <span>+91- 9157975559</span>
                 </p>
               </div>
               <span className="fa fa-phone"></span>
