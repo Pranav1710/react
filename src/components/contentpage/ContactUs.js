@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import axios from 'axios';
+// import axios from "axios";
+import emailjs from "emailjs-com";
 import Breadcrumb from "./Broadcrumb";
 import "./ContactUs.css";
-import {clientKey} from '../../config';
+import { clientKey } from "../../config";
 // import "https://www.google.com/recaptcha/api.js";
 import Map from "./Map";
 
@@ -26,24 +27,35 @@ export default function ContactUs() {
         message: d.get("message"),
       };
       console.log(data);
-      // let urlPost = 'http://api.theblueinternational.com/enquiry';
-      let urlPost = 'http://localhost:5000/enquiry';
 
-      axios.post(urlPost, data)
-        .then(response => {
-          console.log('posted');
-          document.querySelector(".msg").innerHTML = `<div class="alert alert-success" role="alert">
-          Your Message has been sent 
+      emailjs
+        .sendForm(
+          "gmail",
+          "template_q3ttuij",
+          e.target,
+          "user_RxLpqernPYEhnQmhh6ZqJ"
+        )
+        .then(
+          (response) => {
+            console.log("posted");
+            document.querySelector(
+              ".msg"
+            ).innerHTML = `<div class="alert alert-success" role="alert">
+          Your Message has been sent
         </div>`;
-        })
-        .catch(error => {
-          document.querySelector(".msg").innerHTML = `<div class="alert alert-danger" role="alert">
-          Some Server Error Occured, Please try again
-        </div>`
-        })
-      // Make POST request from here using AJAX
+          },
+          (error) => {
+            console.log(error);
+            document.querySelector(
+              ".msg"
+            ).innerHTML = `<div class="alert alert-danger" role="alert">
+                Some Server Error Occured, Please try again
+              </div>`;
+          }
+        );
+        e.target.reset();
     } else {
-      alert('Please Solve Captcha first');
+      alert("Please Solve Captcha first");
     }
   };
 
@@ -61,9 +73,13 @@ export default function ContactUs() {
             </h1>
             <form onSubmit={handleSubmit} id="form1">
               <div className="row">
+                <div
+                  className="col-md-12 msg"
+                  style={{ margin: "2rem 0" }}
+                ></div>
                 <div className="col-md-6" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
-                    <input name="name" type="text" required />
+                    <input name="from_name" type="text" required />
                     <div className="underline"></div>
                     <label>Name</label>
                   </div>
@@ -108,9 +124,6 @@ export default function ContactUs() {
                   <button type="submit" className="btn-send">
                     Send Message
                   </button>
-                </div>
-                <div className="col-md-12 msg" style={{ marginTop: "2rem" }}>
-
                 </div>
               </div>
             </form>
