@@ -104,7 +104,7 @@ export default function AppFooter() {
       </div>
       <div className="text-muted">
         <p className="container">
-          © Copyright 2020 Blue International | Developed by{" "}
+          © Copyright 2020 Blue International | Developed by {"  "}
           <span>Pranav Chanpara</span>
         </p>
       </div>

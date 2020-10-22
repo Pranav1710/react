@@ -11,7 +11,7 @@ export default class Home extends Component {
           <div className="container">
             <h1>Our Products</h1>
             <div className="row pt-5">
-              <div className="col-md-4">
+              <div className="col-md-4" style={{paddingTop: "1em"}}>
                 <div className="anime-img">
                   <img src={imgs.img3} alt="" />
                 </div>
@@ -20,7 +20,7 @@ export default class Home extends Component {
                 we develop innovative Vitrified tiles that are non-porous in nature and alluring in appeal. Their durable body and wear and tear resistant surface expands application potential giving a wide room of imagination and opportunities to you to explore different possibilities.
                 </p>
               </div>  
-              <div className="col-md-4">
+              <div className="col-md-4" style={{paddingTop: "1em"}}>
                 <div className="anime-img">
                   <img src={imgs.img2} alt="" />
                 </div>
@@ -29,7 +29,7 @@ export default class Home extends Component {
                 If you are looking for decorative wall tiles than you have come to the right place. Yes, BLUE international has the wide range of designs - more than 400 designs in various series such as Glossy ,Sugar, Rustic or Matte. Blending urban spectacular designs with contemporary classic designs, they have all style to fit every taste at affordable prices."
                 </p>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4" style={{paddingTop: "1em"}}>
                 <div className="anime-img">
                   <img src={imgs.img1} alt="" />
                 </div>

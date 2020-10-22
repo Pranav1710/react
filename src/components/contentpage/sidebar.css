@@ -17,9 +17,11 @@
 .product-type,
 .product-sub-type {
     user-select: none;
+    /* font-size: .8em; */
 }
 
 .product-title {
+    font-size: 1.3em;
     text-align: center;
     padding: 0.4em 0;
     border-bottom: 1px solid rgba(204, 204, 204, 0.623);
@@ -51,6 +53,7 @@
     margin: 0;
     transition: all 250ms ease;
     height: 0;
+    font-size: 1.1em;
 }
 
 .activeItem .product-items {

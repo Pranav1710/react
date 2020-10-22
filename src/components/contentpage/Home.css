@@ -8,7 +8,7 @@ p {
 }
 
 h3 {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 h1 {
@@ -51,4 +51,16 @@ h1::after {
     transform: scale(1.15);
     transition: all 250ms ease;
     filter: brightness(90%);
+}
+
+@media (max-width: 550px) {
+    .slide-container {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        font-size: 12px;
+    }
 }

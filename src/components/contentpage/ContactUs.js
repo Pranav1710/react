@@ -73,10 +73,7 @@ export default function ContactUs() {
             </h1>
             <form onSubmit={handleSubmit} id="form1">
               <div className="row">
-                <div
-                  className="col-md-12 msg"
-                  style={{ margin: "2rem 0" }}
-                ></div>
+               
                 <div className="col-md-6" style={{ marginTop: "2rem" }}>
                   <div className="input-data">
                     <input name="from_name" type="text" required />
@@ -125,6 +122,10 @@ export default function ContactUs() {
                     Send Message
                   </button>
                 </div>
+                <div
+                  className="col-md-12 msg"
+                  style={{ margin: "2rem 0" }}
+                ></div>
               </div>
             </form>
           </div>

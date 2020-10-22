@@ -1,0 +1,18 @@
+.about {
+    margin-top: 3em;
+}
+
+.about .aboutImg {
+    float: left;
+    height: 30%;
+    width: 40%;
+    display: inline-block;
+}
+
+.about p {
+    /* float: left; */
+    display: inline-block;
+    line-height: 1.7;
+    word-spacing: 1px;
+    text-align: justify;
+}

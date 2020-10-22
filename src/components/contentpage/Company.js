@@ -1,10 +1,13 @@
-import React from 'react'
-import Breadcrumb from './Broadcrumb';
+import React from "react";
+import Breadcrumb from "./Broadcrumb";
+import "./Company.css";
 export default function Company() {
-    return (
-        <div className=".container-fluid">
-            <Breadcrumb />
-            Hello From Company
-        </div>
-    )
+  return (
+    <section>
+      <Breadcrumb />
+      <div className="about">
+       
+      </div>
+    </section>
+  );
 }
