@@ -66,8 +66,8 @@ export default function ContactUs() {
         <div className="row">
           <div className="col-md-12">
             <h1
-              className="h1-responsive text-center my-4 mt-5"
-              style={{ fontSize: "2.5rem" }}
+              className="text-center my-4 mt-5"
+              style={{ fontSize: "2.5em" }}
             >
               Get In Touch <span className="emphesis">Now!</span>
             </h1>
