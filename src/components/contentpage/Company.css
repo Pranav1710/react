@@ -3,15 +3,12 @@
 }
 
 .about .aboutImg {
-    float: left;
-    height: 30%;
-    width: 40%;
-    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    height: 92%;
 }
 
 .about p {
-    /* float: left; */
-    display: inline-block;
     line-height: 1.7;
     word-spacing: 1px;
     text-align: justify;
