@@ -7,7 +7,7 @@ export default function Company() {
       <Breadcrumb />
       <div className="about">
         <div className="container">
-          <h1 style={{fontSize: "2.5em"}}>Who are we?</h1>
+          <h1 style={{fontSize: "2.5em"}}>Who We Are?</h1>
           <div className="row mt-5">
             <div className="col-md-4">
               <img className="aboutImg" src="/assets/imgs/company.jpg" alt="" />
