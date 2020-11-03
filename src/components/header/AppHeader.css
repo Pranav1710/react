@@ -3,7 +3,7 @@ header {
     box-shadow: 0px 2px 2px rgb(219, 217, 217);
     position: relative;
     z-index: 9999;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .sticky {
