@@ -25,7 +25,8 @@ header>.container {
 }
 
 .link-logo {
-    height: 3.5em;
+    margin-top: .6rem;
+    height: 2.5em;
     float: left;
 }
 
